@@ -1,0 +1,7 @@
+services:
+  python-app:
+    image: python:3.11.18-slim-trixie
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python -u 03_hilos_lock.py
